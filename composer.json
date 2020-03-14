@@ -1,0 +1,45 @@
+{
+    "name": "hugojf/eflash",
+    "description": "Laracasts flash messages wrapper with escaping",
+    "license": "GPL-3.0-only",
+    "type": "library",
+    "keywords": [
+        "hugojf",
+        "eflash"
+    ],
+    "homepage": "https://github.com/hugojf/eflash",
+    "authors": [
+        {
+            "name": "Hugo Jeller"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0",
+        "laracasts/flash": "^3.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HugoJF\\Eflash\\": "src"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HugoJF\\Eflash\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
